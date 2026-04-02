@@ -1,3 +1,9 @@
+:root {
+    --primary-color: #000000;
+    --accent-color: #264653;
+    --highlight-color: #e9c46a;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -191,6 +197,10 @@ footer {
 .socialmedia {
     display: flex;
     gap: 12px;
+}
+
+.socialmedia a {
+    text-decoration: none;
 }
 
 .socialmedia img {
