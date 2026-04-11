@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>White Water Rafting | Contact Us</title>
-    <meta name="description" content="Contact us here for any questions!">
+    <meta name="description"
+      content="Contact White Water Rafting to ask questions, make reservations, or learn more about our exciting white water rafting adventures.">
     <meta name="author" content="Branden Graffagnino">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -45,9 +46,8 @@
                   referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
-
             <div class="form-container">
-                <form>
+                <form method="post">
 
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required>
@@ -58,37 +58,38 @@
                     <fieldset>
                         <legend>Message Purpose</legend>
 
-                        <label>
-                            <input type="radio" name="purpose" required>
+                        <label for="purpose-general">
+                            <input type="radio" id="purpose-general" name="purpose" value="general"
+                              required>
                             General Inquiry
                         </label>
 
-                        <label>
-                            <input type="radio" name="purpose">
+                        <label for="purpose-reservation">
+                            <input type="radio" id="purpose-reservation" name="purpose"
+                              value="reservation">
                             Reservation Question
                         </label>
 
-                        <label>
-                            <input type="radio" name="purpose">
+                        <label for="purpose-suggestion">
+                            <input type="radio" id="purpose-suggestion" name="purpose"
+                              value="suggestion">
                             Website Suggestion
                         </label>
                     </fieldset>
 
                     <label for="message">Message</label>
-                    <textarea id="message" rows="4"></textarea>
+                    <textarea id="message" name="message" rows="4"></textarea>
 
-                    <label class="checkbox-label">
-                        <input type="checkbox">
+                    <label for="newsletter" class="checkbox-label">
+                        <input type="checkbox" id="newsletter" name="newsletter">
                         Please Subscribe me to the monthly newsletter
                     </label>
 
                     <button type="submit" class="submit-btn">
                         Get in Touch!
                     </button>
-
                 </form>
             </div>
-
         </section>
 
         <section class="employees">
